@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  padding: 24px;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+  color: palevioletred;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  padding: 12px 8px;
+  color: rgb(130, 45, 56);
+  margin-bottom: 8px;
+  border-radius: 12px;
+}
+
+.bg-one {
+  background-color: rgb(255, 206, 206);
+}
+
+.bg-one:hover {
+  background-color: palevioletred;
+}
+
+.bg-two {
+  background-color: papayawhip;
+}
+
+.bg-two:hover {
+  background-color: pink;
+}
