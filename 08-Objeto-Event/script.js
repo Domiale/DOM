@@ -1,4 +1,4 @@
-/* 
+/*
   Ocurre en el navegador
 
   Para acceder al objeto event (e) se psaa automaticamente (e) se pasa automanticamente como un argumento a la funcion manejadora 
@@ -16,6 +16,9 @@ Propiedades del objeto event:
 
   * code: devuelve el código de la tecla presionada
   * key: Devuelve el valor de la tecla presionada
+  
+  * clientX: Devuelve la posición horizontal de puntero del mouse en relacion a la ventana del navegador 
+  * clientY: Devuelve la posición vertical de puntero del mouse en relacion a la ventana del navegador 
 */
 
 const button = document.getElementsByClassName("button");
