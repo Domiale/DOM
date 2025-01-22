@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: antiquewhite;
+  color: black;
+  padding: 24px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+#parent {
+  background-color: aquamarine;
+  padding: 48px;
+  border-radius: 24px;
+  color: blueviolet;
+}
+
+#child {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+#sibling {
+  font-size: 24px;
+  line-height: 1.5;
+}
