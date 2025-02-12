@@ -11,11 +11,11 @@ addButton.addEventListener("click" , createTask );
 // Funcion manejadora
 
 function createTask () {
+
   if (taskImput.value){
-    console.log(taskImput.value);
-
+   
+    //Creamos el contenedor de una tarea 
     const taskItem = document.createElement("div");
-
     taskItem.classList.add("task");
 
     //Creamos un parrafo para la tarea 
@@ -34,14 +34,29 @@ function createTask () {
     const iconDelate = document.createElement("i");
     iconDelate.classList.add("bi", "bi-trash", "icon-delete");
 
-  //Estructura de los elementos
-  taskIcons.append(iconCheck, iconDelate);
-  taskItem.append(taskText, taskIcons);
-  taskList.append(taskItem);
+    //Estructura de los elementos
+    taskIcons.append(iconCheck, iconDelate);
+    taskItem.append(taskText, taskIcons);
+    taskList.append(taskItem);
+
+    //Escuchadores de los iconos 
+    iconCheck.addEventListener("click", (e) => {
+      e.target.parentNode.parentNode.classList.toggle("complete");
+    })
+    
+    //DEfinir escuchar al elemento iconDelete
+    iconDelate.addEventListener("click", (e) => {
+      e.target.parentNode.parentNode.remove()
+    })
 
     taskImput.value = ""; // regresamos el valor vacio  a Imput
   } else {
     alert("Hey, escribeme una tarea");
   }
   }
- 
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      createTask();
+    }
+  })
